@@ -81,10 +81,14 @@ const education: Experience[] = [
 
 export default function page() {
   return (
-    <header className="md:mt-6">
+    <header className="md:mt-6 overflow-x-hidden w-full">
       <nav className="mx-auto flex flex-col max-w-[700px] items-start justify-between gap-12 px-4 py-3 md:px-6">
-        <section className="flex flex-col gap-3">
-          <h1 className="text-4xl font-bold mb-2">Hi, this is Yu-Ting Chen!</h1>
+        <section className="flex flex-col gap-3 w-full">
+          <h1 className="text-4xl font-bold mb-2 break-words w-full">
+            Hello,
+            <br className="block sm:hidden" />
+            <span className="sm:ml-2">this is Yu-Ting Chen!</span>
+          </h1>
 
           <div>
             I am <span className="font-semibold">Yu-Ting Chen 陳郁婷</span> from{" "}
@@ -96,7 +100,7 @@ export default function page() {
             real-world challenges.
           </div>
 
-          <div className="flex items-center gap-3 mt-2">
+          <section className="flex flex-wrap items-center gap-3 mt-2 w-full">
             <EmailButton />
 
             <Link
@@ -120,7 +124,7 @@ export default function page() {
             </Link>
 
             <ResumeDownload />
-          </div>
+          </section>
         </section>
 
         <section>
@@ -135,7 +139,7 @@ export default function page() {
                       alt={exp.institution}
                       width={48}
                       height={48}
-                      className="rounded-full object-contain border border-gray-200 dark:border-gray-700"
+                      className="w-12 h-12 rounded-full object-cover border border-gray-200 dark:border-gray-700"
                     />
                     <div>
                       <p className="text-base font-semibold text-black dark:text-white">
@@ -173,7 +177,7 @@ export default function page() {
                       alt={exp.institution}
                       width={48}
                       height={48}
-                      className="rounded-full object-contain border border-gray-200 dark:border-gray-700"
+                      className="w-12 h-12 rounded-full object-cover border border-gray-200 dark:border-gray-700"
                     />
                     <div>
                       <p className="text-base font-semibold text-black dark:text-white">
