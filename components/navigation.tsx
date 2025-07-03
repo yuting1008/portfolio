@@ -3,15 +3,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { ModeToggle } from "@/components/mode-toggle";
-import Image from "next/image";
 
 const links = [
   {
     path: "/",
-    title: "Home",
-  },
-  {
-    path: "/about",
     title: "About",
   },
   {
