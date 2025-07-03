@@ -1,20 +1,12 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Linkedin, Github } from "lucide-react";
 import { EmailButton } from "@/components/email-btn";
 import { ResumeDownload } from "@/components/resume-btn";
 import FadeIn from "@/components/fade-in";
 import ExperienceSection, { Experience } from "@/components/experience";
-
-// type Experience = {
-//   logoSrc: string;
-//   institution: string;
-//   role?: string;
-//   duration?: string;
-//   details?: string[];
-// };
+import { useEffect } from "react";
 
 const workExperiences: Experience[] = [
   {
@@ -82,6 +74,10 @@ const education: Experience[] = [
 ];
 
 export default function page() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, []);
+
   return (
     <header className="md:mt-6 overflow-x-hidden w-full">
       <nav className="mx-auto flex flex-col max-w-[700px] items-start justify-between gap-12 px-4 py-3 md:px-6">
