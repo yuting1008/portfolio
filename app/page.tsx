@@ -1,30 +1,10 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Linkedin, Github } from "lucide-react";
 import { EmailButton } from "@/components/email-btn";
 import { ResumeDownload } from "@/components/resume-btn";
-
-const links = [
-  {
-    path: "/",
-    title: "Home",
-  },
-  {
-    path: "/about",
-    title: "About",
-  },
-  {
-    path: "/project",
-    title: "Project",
-  },
-  {
-    path: "/blog",
-    title: "Blog",
-  },
-] as const;
 
 type Experience = {
   logoSrc: string;
@@ -100,8 +80,6 @@ const education: Experience[] = [
 ];
 
 export default function page() {
-  const pathname = `/${usePathname().split("/")[1]}`;
-
   return (
     <header className="md:mt-6">
       <nav className="mx-auto flex flex-col max-w-[700px] items-start justify-between gap-12 px-4 py-3 md:px-6">
