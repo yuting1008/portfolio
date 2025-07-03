@@ -65,7 +65,7 @@ const education: Experience[] = [
   {
     logoSrc: "/logos/ntu.png",
     institution: "National Taiwan University",
-    role: "Bachelor of Business Administration, Information Management",
+    role: "Bachelor of Information Management",
     duration: "2021 - 2026",
     details: [
       "Relevant Coursework: Data Structure, Algorithms, Database Management, Computer Networking, Data Analytics,  Web Application Programming, System Analysis and Design",
@@ -141,16 +141,21 @@ export default function page() {
                       height={48}
                       className="w-12 h-12 rounded-full object-cover border border-gray-200 dark:border-gray-700"
                     />
-                    <div>
+                    <div className="flex flex-col space-y-1">
                       <p className="text-base font-semibold text-black dark:text-white">
                         {exp.institution}
                       </p>
                       <p className="text-sm text-gray-600 dark:text-gray-400">
                         {exp.role}
                       </p>
+                      <p className="text-sm text-gray-400 dark:text-gray-400 sm:hidden">
+                        {exp.duration}
+                      </p>
                     </div>
                   </div>
-                  <div className="text-sm text-gray-400">{exp.duration}</div>
+                  <div className="text-sm text-gray-400 hidden sm:block">
+                    {exp.duration}
+                  </div>
                 </div>
 
                 <ul className="list-disc list-inside text-gray-800 dark:text-gray-300 text-sm pl-14">
@@ -179,16 +184,22 @@ export default function page() {
                       height={48}
                       className="w-12 h-12 rounded-full object-cover border border-gray-200 dark:border-gray-700"
                     />
-                    <div>
+                    <div className="flex flex-col space-y-1">
                       <p className="text-base font-semibold text-black dark:text-white">
                         {exp.institution}
                       </p>
                       <p className="text-sm text-gray-600 dark:text-gray-400">
                         {exp.role}
                       </p>
+                      <p className="text-sm text-gray-400 dark:text-gray-400 sm:hidden">
+                        {exp.duration}
+                      </p>
                     </div>
                   </div>
-                  <div className="text-sm text-gray-400">{exp.duration}</div>
+
+                  <div className="text-sm text-gray-400 hidden sm:block">
+                    {exp.duration}
+                  </div>
                 </div>
 
                 <ul className="list-disc list-inside text-gray-800 dark:text-gray-300 text-sm pl-14">
