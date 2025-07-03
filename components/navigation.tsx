@@ -10,12 +10,12 @@ const links = [
     title: "About",
   },
   {
-    path: "/projects",
-    title: "Projects",
+    path: "/project",
+    title: "Project",
   },
   {
-    path: "/resume",
-    title: "Resume",
+    path: "/blog",
+    title: "Blog",
   },
 ] as const;
 
