@@ -1,9 +1,10 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { motion } from "framer-motion";
-import { ModeToggle } from "@/components/mode-toggle";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Linkedin, Github } from "lucide-react";
+import { EmailButton } from "@/components/email-btn";
 
 const links = [
   {
@@ -109,6 +110,29 @@ export default function page() {
             I am an undergraduate in National Taiwan University majoring in
             Information Management.
           </div>
+          <div className="flex items-center gap-3 mt-2">
+            <EmailButton />
+
+            <Link
+              href="https://www.linkedin.com/in/yu-ting-sally-chen-8b237b251/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="secondary" size="sm" className="cursor-pointer">
+                <Linkedin /> LinkedIn
+              </Button>
+            </Link>
+
+            <Link
+              href="https://github.com/yuting1008"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="secondary" size="sm" className="cursor-pointer">
+                <Github /> GitHub
+              </Button>
+            </Link>
+          </div>
         </section>
 
         <section>
@@ -186,57 +210,6 @@ export default function page() {
             ))}
           </div>
         </section>
-        {/* 
-        <section>
-          <h2 className="text-2xl font-semibold mb-2">Education</h2>
-          <div className="flex flex-col gap-6 py-4">
-            <section className="flex flex-col gap-2">
-              <div className="flex justify-between items-start">
-                <div className="flex gap-3">
-                  <Image
-                    src={"/logos/ntu.png"}
-                    alt="National Taiwan University"
-                    width={48}
-                    height={48}
-                    className="rounded-full object-contain border border-gray-200 dark:border-gray-700"
-                  />
-                  <div>
-                    <p className="text-base font-semibold text-black dark:text-white">
-                      National Taiwan University
-                    </p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                      Bachelor of Business Administration, Information
-                      Management
-                    </p>
-                  </div>
-                </div>
-                <div className="text-sm text-gray-400">{"2021 - 2026"}</div>
-
-                <ul className="list-disc list-inside text-gray-800 dark:text-gray-300 text-sm pl-14">
-                  <li className="leading-relaxed">test</li>
-                </ul>
-              </div>
-            </section>
-
-            <div className="flex items-center gap-3">
-              <Image
-                src={"/logos/lille.jpeg"}
-                alt="Lille Catholic University"
-                width={48}
-                height={48}
-                className="rounded-full object-contain border border-gray-200 dark:border-gray-700"
-              />
-              <div>
-                <p className="text-base font-semibold text-black dark:text-white">
-                  Lille Catholic University
-                </p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Exchange Program
-                </p>
-              </div>
-            </div>
-          </div>
-        </section> */}
       </nav>
     </header>
   );
