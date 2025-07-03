@@ -25,13 +25,11 @@ export function EmailButton() {
     >
       {copied ? (
         <>
-          <Check className="mr-2 h-4 w-4" />
-          Email
+          <Check /> Email
         </>
       ) : (
         <>
-          <Mail className="mr-2 h-4 w-4" />
-          Email
+          <Mail /> Email
         </>
       )}
     </Button>
