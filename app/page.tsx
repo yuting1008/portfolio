@@ -41,7 +41,7 @@ const workExperiences: Experience[] = [
     details: [
       "Implemented a Proof of Concept (PoC) for fine-tuning and deploying small language models (SLM) with Azure, assisting a client in securing a NT$1M government proposal.",
       "Developed a Microsoft Teams bot integrated with Azure, Copilot, and Graph API to facilitate Copilot pre-sale sessions.",
-      "Implemented a multi-agent system using Azure, RAG, and AutoGen and  to streamline AI-driven workflows for clients.",
+      "Implemented a multi-agent system using Azure, RAG, and AutoGen to streamline AI-driven workflows for clients.",
       "Consolidated demo pipelines and documentations for Azure Data & AI services, streamlining internal knowledge sharing and customer enablement.",
       "Delivered technical assistance for 10+ official tours, showcasing Microsoft's latest technologies to guests.",
     ],
