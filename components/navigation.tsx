@@ -33,6 +33,7 @@ export default function Navigation() {
             width={36}
             height={36}
             className="hidden md:block"
+            priority
           />
         </Link>
 
