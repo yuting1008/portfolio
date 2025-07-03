@@ -73,7 +73,7 @@ const education: Experience[] = [
   },
 ];
 
-export default function page() {
+export default function Page() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);

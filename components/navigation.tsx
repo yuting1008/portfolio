@@ -3,6 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { ModeToggle } from "@/components/mode-toggle";
+import Image from "next/image";
 
 const links = [
   {
@@ -26,7 +27,7 @@ export default function Navigation() {
     <header className="md:mt-6">
       <nav className="mx-auto flex max-w-[700px] items-center justify-between gap-3 px-4 py-3 md:px-6">
         <Link href="/" className="hidden shrink-0 text-primary md:block">
-          <img
+          <Image
             src="/home.png"
             alt="Logo"
             width={36}
