@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Linkedin, Github } from "lucide-react";
 import { EmailButton } from "@/components/email-btn";
+import { ResumeDownload } from "@/components/resume-btn";
 
 const links = [
   {
@@ -139,6 +140,8 @@ export default function page() {
                 <Github /> GitHub
               </Button>
             </Link>
+
+            <ResumeDownload />
           </div>
         </section>
 
