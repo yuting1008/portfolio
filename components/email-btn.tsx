@@ -10,7 +10,7 @@ export function EmailButton() {
     try {
       await navigator.clipboard.writeText(email);
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000); // 顯示提示 2 秒後還原
+      setTimeout(() => setCopied(false), 2000);
     } catch (err) {
       console.error("Failed to copy email:", err);
     }
