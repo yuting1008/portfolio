@@ -94,7 +94,7 @@ const education: Experience[] = [
     logoSrc: "/logos/lille.jpeg",
     institution: "Lille Catholic University",
     role: "Incoming Exchange Student",
-    duration: "Feb. 2025 - Jul. 2025",
+    duration: "Feb. 2026 - Jul. 2026",
   },
 ];
 
