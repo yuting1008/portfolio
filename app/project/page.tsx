@@ -12,7 +12,7 @@ const projects: Project[] = [
     details:
       "This is a Microsoft Teams message extension for Copilot, enabling users to query experts based on skills, location, and availability via Microsoft Graph.",
     source: "https://github.com/yuting1008/MSFT-Expert-Finder",
-    techStack: ["Azure", "JavaScript", "Teams Toolkit", "Graph API"],
+    tags: ["Azure", "JavaScript", "Teams Toolkit", "Graph API"],
   },
 ];
 
