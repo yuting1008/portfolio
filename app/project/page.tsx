@@ -26,17 +26,19 @@ export default function Page() {
       <nav className="mx-auto flex flex-col max-w-[700px] items-start justify-between gap-3 px-4 py-3 md:px-6">
         <section className="flex flex-col gap-4 w-full">
           <FadeIn delay={1}>
-            <h1 className="text-4xl font-bold mb-2 break-words w-full">
-              Check out
-              <br className="block sm:hidden" />
-              <span className="sm:ml-2">my projects!</span>
-            </h1>
+            <section className="flex flex-col gap-3 w-full">
+              <h1 className="text-4xl font-bold mb-2 break-words w-full">
+                Check out
+                <br className="block sm:hidden" />
+                <span className="sm:ml-2">my projects!</span>
+              </h1>
 
-            <div>
-              From academic projects to real-world industry experience, I’ve
-              built up a diverse portfolio. Here are a few highlights. Please
-              stay tuned for more!
-            </div>
+              <div>
+                From academic projects to real-world industry experience, I’ve
+                built up a diverse portfolio. Here are a few highlights. Please
+                stay tuned for more ⚡️
+              </div>
+            </section>
           </FadeIn>
 
           <FadeIn delay={1.25}>
