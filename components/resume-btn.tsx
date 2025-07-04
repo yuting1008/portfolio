@@ -5,7 +5,7 @@ import { Download } from "lucide-react";
 export function ResumeDownload() {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
+    link.href = "/Yu-Ting-Chen-Resume.pdf";
     link.download = "Yu-Ting-Chen-Resume.pdf";
     link.click();
   };
