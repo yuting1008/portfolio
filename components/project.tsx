@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Github, Monitor } from "lucide-react";
+import { Github, Monitor, BookText } from "lucide-react";
 
 export type Project = {
   logoSrc: string;
@@ -17,7 +17,8 @@ export type Project = {
   details?: string;
   source?: string;
   website?: string;
-  techStack?: string[];
+  tags?: string[];
+  blog?: string;
 };
 
 export default function ProjectSection({ items }: { items: Project[] }) {
@@ -61,13 +62,13 @@ export default function ProjectSection({ items }: { items: Project[] }) {
                   </CardDescription>
                 </CardHeader>
                 <div className="flex flex-row flex-wrap gap-2">
-                  {project.techStack?.map((tech, i) => (
+                  {project.tags?.map((tag, i) => (
                     <Badge
                       key={i}
                       variant="secondary"
                       className="whitespace-nowrap"
                     >
-                      {tech}
+                      {tag}
                     </Badge>
                   ))}
                 </div>
@@ -101,6 +102,22 @@ export default function ProjectSection({ items }: { items: Project[] }) {
                       >
                         <Github />
                         GitHub
+                      </a>
+                    </Button>
+                  )}
+                  {project.blog && (
+                    <Button
+                      asChild
+                      size="sm"
+                      className="h-7 px-2 text-xs gap-1 mr-2"
+                    >
+                      <a
+                        href={project.source}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <BookText />
+                        Medium
                       </a>
                     </Button>
                   )}
