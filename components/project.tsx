@@ -112,7 +112,7 @@ export default function ProjectSection({ items }: { items: Project[] }) {
                       className="h-7 px-2 text-xs gap-1 mr-2"
                     >
                       <a
-                        href={project.source}
+                        href={project.blog}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
