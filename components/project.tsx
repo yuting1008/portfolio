@@ -9,6 +9,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, Monitor, BookText } from "lucide-react";
+import { Skeleton } from "@/components/ui/skeleton";
+import { useState } from "react";
 
 export type Project = {
   logoSrc: string;
@@ -22,6 +24,7 @@ export type Project = {
 };
 
 export default function ProjectSection({ items }: { items: Project[] }) {
+  const [isLoading, setIsLoading] = useState(true);
   return (
     <section>
       <div className="flex flex-col gap-6 w-full">
@@ -43,11 +46,17 @@ export default function ProjectSection({ items }: { items: Project[] }) {
                   md:self-stretch
                 "
               >
+                {isLoading && (
+                  <Skeleton className="absolute inset-0 w-full h-full rounded-md" />
+                )}
                 <Image
                   src={project.logoSrc}
                   alt={project.name}
                   fill
-                  className="object-cover"
+                  className={`object-cover transition-opacity duration-300 ${
+                    isLoading ? "opacity-0" : "opacity-100"
+                  }`}
+                  onLoad={() => setIsLoading(false)}
                 />
               </div>
 
