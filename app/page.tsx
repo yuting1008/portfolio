@@ -135,10 +135,10 @@ export default function Page() {
             </section>
           </section>
         </FadeIn>
-        <FadeIn delay={2}>
+        <FadeIn delay={1.25}>
           <ExperienceSection title="Work Experience" items={workExperiences} />
         </FadeIn>
-        <FadeIn delay={3}>
+        <FadeIn delay={1.5}>
           <ExperienceSection title="Education" items={education} />
         </FadeIn>
       </nav>
