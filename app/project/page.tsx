@@ -1,8 +1,5 @@
 "use client";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { EmailButton } from "@/components/email-btn";
-import { ResumeDownload } from "@/components/resume-btn";
+
 import FadeIn from "@/components/fade-in";
 import { useEffect } from "react";
 import ProjectSection, { Project } from "@/components/project";
