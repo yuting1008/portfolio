@@ -15,18 +15,7 @@ const projects: Project[] = [
     details:
       "This is a Microsoft Teams message extension for Copilot, enabling users to query experts based on skills, location, and availability via Microsoft Graph.",
     source: "https://github.com/yuting1008/MSFT-Expert-Finder",
-    // techStack: ["Azure", "Teams Toolkit", "Graph API"],
     techStack: ["Azure", "JavaScript", "Teams Toolkit", "Graph API"],
-  },
-  {
-    logoSrc: "/projects/expert-finder.png",
-    name: "Expert Finder",
-    period: "Nov. 2024 - Feb. 2025",
-    details:
-      "This is a Microsoft Teams message extension for Copilot, enabling users to query experts based on skills, location, and availability via Microsoft Graph.",
-    source: "https://github.com/yuting1008/MSFT-Expert-Finder",
-    website: "https://expert-finder.vercel.app",
-    techStack: ["Azure", "Teams Toolkit", "Graph API"],
   },
 ];
 
