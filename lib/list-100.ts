@@ -90,5 +90,10 @@ export const list100: ListItem[] = [
     title: "Support women in tech",
     completed: false,
   },
+  {
+    id: 18,
+    title: "Work abroad",
+    completed: false,
+  },
 ];
 
