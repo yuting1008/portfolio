@@ -10,9 +10,20 @@ import { useEffect } from "react";
 
 const workExperiences: Experience[] = [
   {
+    logoSrc: "/logos/appier.png",
+    institution: "Appier",
+    role: "Technical Solution Engineer Intern",
+    duration: "Aug. 2025 – Dec. 2025",
+    details: [
+      "Created a multi-agent system using Google Agent Development Kit (ADK) and Model Context Protocol (MCP), enabling automated knowledge retrieval and task orchestration to enhance technical support services.",
+      "Resolved 20+ Jira tickets related to customer data platform pipelines, data quality issues, and API integrations.",
+      "Built a secure SFTP server with configurations including user isolation, chroot environments, logging, and access control.",
+    ],
+  },
+  {
     logoSrc: "/logos/microsoft.png",
     institution: "Microsoft",
-    role: "Technical Assistant Intern",
+    role: "Technical Architect Intern",
     duration: "Jul. 2024 – Jun. 2025",
     details: [
       "Implemented a Proof of Concept (PoC) for fine-tuning and deploying small language models (SLM) with Azure, assisting a client in securing a NT$1M government proposal.",
@@ -62,14 +73,18 @@ const education: Experience[] = [
     role: "Bachelor of Information Management",
     duration: "2021 - 2026",
     details: [
-      "Relevant Coursework: Data Structure, Algorithms, Database Management, Computer Networking, Data Analytics,  Web Application Programming, System Analysis and Design",
+      "Relevant Coursework: Data Structure, Algorithms, Database Management, Computer Networking, Linear Algebra,  Operating Systems, System Analysis and Design",
     ],
   },
   {
     logoSrc: "/logos/lille.jpeg",
     institution: "Lille Catholic University",
-    role: "Incoming Exchange Student",
+    role: "Exchange Student",
     duration: "Feb. 2026 - Jul. 2026",
+    details: [
+      "Program: JUNIA ISEN, Master of Software Engineering and Information Systems",
+      "Relevant Coursework: Natural Language Processing, Advanced Machine Learning, Linux Programming, Web Technologies",
+    ],
   },
 ];
 
@@ -97,7 +112,7 @@ export default function Page() {
               <span className="font-semibold">Information Management</span> at{" "}
               <span className="font-semibold">National Taiwan University</span>,
               I bring a hybrid expertise in business and technology to solve
-              complex real-world challenges.
+              complex real-world challenges and generate social impact.
             </div>
 
             <section className="flex flex-wrap items-center gap-3 mt-2 w-full">
