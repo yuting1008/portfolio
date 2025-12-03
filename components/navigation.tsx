@@ -17,6 +17,10 @@ const links = [
     path: "/blog",
     title: "Blog",
   },
+  {
+    path: "/list-100",
+    title: "List 100",
+  },
 ] as const;
 
 export default function Navigation() {

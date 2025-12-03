@@ -28,7 +28,7 @@ export default function Page() {
           <FadeIn delay={1}>
             <section className="flex flex-col gap-3 w-full">
               <h1 className="text-4xl font-bold mb-2 break-words w-full">
-                Dive into
+                Explore
                 <br className="block sm:hidden" />
                 <span className="sm:ml-2">my latest blog posts!</span>
               </h1>
