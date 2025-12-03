@@ -37,7 +37,7 @@ export const list100: ListItem[] = [
   },
   {
     id: 7,
-    title: "Join my dream company (keep this one a secret for now)",
+    title: "Join my dream company (keep it a secret for now)",
     completed: false,
   },
   {

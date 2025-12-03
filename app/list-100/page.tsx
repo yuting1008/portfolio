@@ -38,7 +38,10 @@ export default function Page() {
                   <div key={item.id} className="flex items-start gap-3">
                     <Checkbox id={item.id.toString()} defaultChecked disabled />
                     <div className="grid gap-2">
-                      <Label htmlFor={item.id.toString()}>
+                      <Label
+                        htmlFor={item.id.toString()}
+                        className="leading-relaxed"
+                      >
                         {item.id}. {item.title}
                       </Label>
                     </div>
@@ -51,7 +54,10 @@ export default function Page() {
                       disabled
                     />
                     <div className="grid gap-2">
-                      <Label htmlFor={item.id.toString()}>
+                      <Label
+                        htmlFor={item.id.toString()}
+                        className="leading-relaxed"
+                      >
                         {item.id}. {item.title}
                       </Label>
                     </div>
