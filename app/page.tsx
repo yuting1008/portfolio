@@ -10,6 +10,17 @@ import { useEffect } from "react";
 
 const workExperiences: Experience[] = [
   {
+    logoSrc: "/logos/ntu.png",
+    institution: "National Taiwan University",
+    role: "Software Engineer",
+    duration: "Feb. 2026 – Present",
+    details: [
+      "Developed a responsive web application using React, TypeScript, and Tailwind CSS to visualize real-time AI computer vision analysis from the NTU Future Classroom.",
+      "Architected and deployed a full-stack chatbot system leveraging TypeScript and Node.js/Express to automate inquiry responses for NTU.",
+      "Built a monitoring dashboard using Next.js, allowing administrators to review live chat logs and system performance metrics.",
+    ],
+  },
+  {
     logoSrc: "/logos/appier.png",
     institution: "Appier",
     role: "Technical Solution Engineer Intern",
@@ -68,10 +79,19 @@ const workExperiences: Experience[] = [
 
 const education: Experience[] = [
   {
+    logoSrc: "/logos/ucberkeley.svg",
+    institution: "University of California, Berkeley",
+    role: "Master of Engineering",
+    duration: "Aug. 2026 - May. 2027",
+    details: [
+      "Department: Electrical Engineering and Computer Sciences (EECS)",
+    ],
+  },
+  {
     logoSrc: "/logos/ntu.png",
     institution: "National Taiwan University",
     role: "Bachelor of Information Management",
-    duration: "2021 - 2026",
+    duration: "Sept. 2021 - Jun. 2026",
     details: [
       "Relevant Coursework: Data Structure, Algorithms, Database Management, Computer Networking, Linear Algebra,  Operating Systems, System Analysis and Design",
     ],
@@ -80,7 +100,7 @@ const education: Experience[] = [
     logoSrc: "/logos/lille.jpeg",
     institution: "Lille Catholic University",
     role: "Exchange Student",
-    duration: "Feb. 2026 - Jul. 2026",
+    duration: "Feb. 2026 - Jun. 2026",
     details: [
       "Program: JUNIA ISEN, Master of Software Engineering and Information Systems",
       "Relevant Coursework: Natural Language Processing, Advanced Machine Learning, Linux Programming, Web Technologies",
