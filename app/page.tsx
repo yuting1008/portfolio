@@ -12,7 +12,7 @@ const workExperiences: Experience[] = [
   {
     logoSrc: "/logos/ntu.png",
     institution: "National Taiwan University",
-    role: "Software Engineer",
+    role: "Software Engineer Intern",
     duration: "Feb. 2026 – Present",
     details: [
       "Developed a responsive web application using React, TypeScript, and Tailwind CSS to visualize real-time AI analysis, serving 160+ students and professors across 4 university courses.",
