@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Linkedin, Github } from "lucide-react";
+import { Linkedin, Github, Search } from "lucide-react";
 import { EmailButton } from "@/components/email-btn";
 import { ResumeDownload } from "@/components/resume-btn";
 import FadeIn from "@/components/fade-in";
@@ -15,9 +15,8 @@ const workExperiences: Experience[] = [
     role: "Software Engineer",
     duration: "Feb. 2026 – Present",
     details: [
-      "Developed a responsive web application using React, TypeScript, and Tailwind CSS to visualize real-time AI computer vision analysis from the NTU Future Classroom.",
-      "Architected and deployed a full-stack chatbot system leveraging TypeScript and Node.js/Express to automate inquiry responses for NTU.",
-      "Built a monitoring dashboard using Next.js, allowing administrators to review live chat logs and system performance metrics.",
+      "Developed a responsive web application using React, TypeScript, and Tailwind CSS to visualize real-time AI analysis, serving 160+ students and professors across 4 university courses.",
+      "Implemented a full-stack chatbot service utilizing Gemini File Search and native Gemini APIs for RAG-driven query responses, paired with a Next.js admin dashboard to track system metrics and audit chat logs.",
     ],
   },
   {
@@ -28,7 +27,7 @@ const workExperiences: Experience[] = [
     details: [
       "Created a multi-agent system using Google Agent Development Kit (ADK) and Model Context Protocol (MCP), enabling automated knowledge retrieval and task orchestration to enhance technical support services.",
       "Resolved 20+ Jira tickets related to customer data platform pipelines, data quality issues, and API integrations.",
-      "Built a secure SFTP server with configurations including user isolation, chroot environments, logging, and access control.",
+      "Deployed and designed a secure SFTP server on Linux virtual machines using Shell Script, implementing chroot jail isolation, user access controls, and robust logging to enforce strict data privacy.",
     ],
   },
   {
@@ -37,11 +36,10 @@ const workExperiences: Experience[] = [
     role: "Technical Architect Intern",
     duration: "Jul. 2024 – Jun. 2025",
     details: [
-      "Implemented a Proof of Concept (PoC) for fine-tuning and deploying small language models (SLM) with Azure, assisting a client in securing a NT$1M government proposal.",
-      "Developed a Microsoft Teams bot integrated with Azure, Copilot, and Graph API to facilitate Copilot pre-sale sessions.",
-      "Implemented a multi-agent system using Azure, RAG, and AutoGen to streamline AI-driven workflows for clients.",
-      "Consolidated demo pipelines and documentations for Azure Data & AI services, streamlining internal knowledge sharing and customer enablement.",
-      "Delivered technical assistance for 10+ official tours, showcasing Microsoft's latest technologies to guests.",
+      "Built a multi-agent system using Azure, RAG, and AutoGen to enhance clients’ operational process efficiency.",
+      "Developed a Microsoft Teams bot integrated with Azure, Copilot, and Graph API to facilitate internal communication.",
+      "Implemented a Proof of Concept (PoC) for fine-tuning and deploying Small Language Models (SLM) with Azure.",
+      "Authored technical documentations for Azure AI services to support internal knowledge sharing and delivered technical demonstrations for 10+ executive-level client tours to drive product adoption.",
     ],
   },
   {
@@ -60,19 +58,18 @@ const workExperiences: Experience[] = [
     role: "Application Consultant Intern",
     duration: "Feb. 2024 – Jun. 2024",
     details: [
-      "Developed front-end features with HTML, CSS, JavaScript, Bootstrap, and Vue.js.",
-      "Automated Jira workflows to streamline project management process, resulting in a 20% decrease of time.",
-      "Built weekly reports with Python and Jira APIs, reducing weekly manual data processing time by 50%.",
+      "Developed an end-to-end Python data pipeline that fetched issue status via Jira API and automated PDF report generation, cutting weekly manual reporting overhead by 50%.",
+      "Designed and implemented modular, responsive Vue.js and Bootstrap components for a data visualization dashboard, enabling consultants to monitor real-time project metrics.",
     ],
   },
   {
     logoSrc: "/logos/dbs.jpg",
     institution: "DBS Bank",
-    role: "Operations Intelligence Intern",
+    role: "Data Engineer Intern",
     duration: "Jul. 2023 - Aug. 2023",
     details: [
-      "Developed Python-based robotic process automation (RPA) tools to migrate 10,000+ transaction records, enabling seamless system migration from Citi Bank.",
-      "Performed data analysis by creating dashboards in Python and Excel, reducing daily decision-making time by 40%.",
+      "Implemented custom Python automation pipelines to securely migrate 10,000+ financial transaction records, ensuring zero data loss during system migration.",
+      "Developed data processing scripts and interactive dashboards using Python and Tableau to centralize business metrics, reducing daily executive decision-making time by 40%.",
     ],
   },
 ];
@@ -129,9 +126,14 @@ export default function Page() {
               from <span className="font-semibold">Taiwan</span>, and you can
               also call me <span className="font-semibold">Sally</span>.
               Currently studying{" "}
-              <span className="font-semibold">Information Management</span> at{" "}
-              <span className="font-semibold">National Taiwan University</span>,
-              I bring a hybrid expertise in business and technology to solve
+              <span className="font-semibold">
+                Electrical Engineering and Computer Sciences
+              </span>{" "}
+              at{" "}
+              <span className="font-semibold">
+                University of California, Berkeley
+              </span>
+              , I bring a hybrid expertise in business and technology to solve
               complex real-world challenges and generate social impact.
             </div>
 
