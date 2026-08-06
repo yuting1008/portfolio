@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Linkedin, Github, Search } from "lucide-react";
+import { Linkedin, Github } from "lucide-react";
 import { EmailButton } from "@/components/email-btn";
 import { ResumeDownload } from "@/components/resume-btn";
 import FadeIn from "@/components/fade-in";
